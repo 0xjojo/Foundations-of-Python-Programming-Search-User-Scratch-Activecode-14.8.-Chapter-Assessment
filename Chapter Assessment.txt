@@ -1,0 +1,118 @@
+//Write a function, sublist, that takes in a list of numbers as the parameter.
+// In the function, use a while loop to return a sublist of the input list. 
+//The sublist should contain the same values of the original list up until it reaches the number 5 
+//(it should not contain the number 5).
+
+def sublist (lis):
+    count = 0
+    sunlist = []
+    while lis[count] is not 5:
+        sunlist.append(lis[count])
+        count = count + 1
+        
+        if count == len(lis):
+            break
+       
+    
+    return sunlist
+	
+//Write a function called check_nums that takes a list as its parameter,
+// and contains a while loop that only stops once the element of the list is the number 7.
+// What is returned is a list of all of the numbers up until it reaches 7.
+
+
+lis = []
+def check_nums (lis): 
+    nums = []
+    count = 0
+    print (lis)
+    while 7 is not lis[count]:
+        nums.append(lis[count])
+        count = count + 1
+        if count == len(lis):
+            break
+    return nums
+
+	
+//Write a function, sublist, that takes in a list of strings as the parameter.
+// In the function, use a while loop to return a sublist of the input list. The sublist should contain the same values of
+//the original list up until it reaches the string “STOP” (it should not contain the string “STOP”).
+
+def sublist (lis):
+    count = 0 
+    sublis = []
+    while lis[count] is not 'STOP' :
+        sublis.append(lis[count])
+        count = count + 1
+        if count == len(lis):
+            break
+    return sublis
+	
+	
+//Write a function called stop_at_z that iterates through a list of strings. 
+//Using a while loop, append each string to a new list until the string that appears is “z”.
+// The function should return the new list.
+
+def stop_at_z(strings):
+    count = 0 
+    new_str = []
+    while strings[count] is not 'z' :
+        new_str.append(strings[count])
+        count = count + 1
+        if count == len(strings):
+            break
+    return new_str
+    
+	
+//Below is a for loop that works. Underneath the for loop, rewrite the problem so that it does the same thing,
+// but using a while loop instead of a for loop. Assign the accumulated total in the while loop code to the variable sum2. 
+//Once complete, sum2 should equal sum1.
+
+
+sum1 = 0
+sum2 = 0
+
+lst = [65, 78, 21, 33]
+
+for x in lst:
+    sum1 = sum1 + x
+
+count = 0
+while count < len(lst):
+    sum2 = sum2 + lst[count]
+    count = count + 1 
+	
+	
+//Challenge: Write a function called beginning that takes a list as input and contains a while loop 
+//that only stops once the element of the list is the string ‘bye’. What is returned is a list
+// that contains up to the first 10 strings, regardless of where the loop stops. 
+//(i.e., if it stops on the 32nd element, the first 10 are returned. 
+//If “bye” is the 5th element, the first 4 are returned.) If you want to make this even more of a challenge, 
+//do this without slicing
+
+
+def beginning (strings):
+    n = len(strings)
+    count = 0
+    new = []
+    ten = 0
+    first = []
+    while strings[count] != 'bye':
+        new.strings(count)
+        count = count + 1
+        if count == n :
+            break
+    if len(new) < 10:
+        return new 
+    else :
+        while ten <= 10 :
+            first.append(new[ten])
+            ten = ten + 1
+        return first
+    
+
+
+
+
+
+
